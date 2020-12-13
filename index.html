@@ -1,111 +1,193 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-  <title>Miyanei.Cn 深蓝小窝</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
-  .fakeimg {
-      height: 200px;
-      background: #aaa;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <title>金蛋星球 - GoldenEggsServer</title>
+    <link href="./favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap and fullPage -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/egg.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>深蓝小窝</h1>
+<div id="eggs">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #F6F8F9;">
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarText" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-brand container">
+            <img alt="" height="30" loading="lazy" src="./favicon.png" width="30">
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto container">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://skin.miyanei.cn:2333/skinlib">皮肤</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">联系</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <img alt="User Image" class="bs-avatar mr-2" src="http://skin.miyanei.cn:2333/avatar/3?size=36">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a class="dropdown-item" href="http://skin.miyanei.cn:2333/user">
+                            用户中心
+                        </a>
+                        <a class="dropdown-item" href="http://skin.miyanei.cn:2333/user/profile">
+                            个人资料
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://skin.miyanei.cn:2333/admin">
+                            管理面板
+                        </a>
+                        <a class="dropdown-item" href="http://skin.miyanei.cn:2333/admin/users">
+                            用户管理
+                        </a>
+                        <a class="dropdown-item" href="http://skin.miyanei.cn:2333/admin/reports">
+                            举报管理
+                        </a>
+                        <a class="dropdown-item" data-target="#modal-logout" data-toggle="modal" href="#" id="logout-button">
+                            登出
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid align-middle">
+        <div class="row clearfix align-middle">
+            <div class="col-md-8 column modal-dialog modal-dialog-centered">
+                <div class="row rowtitle clearfix align-middle">
+                    <svg height="100%" viewBox="0 0 438.361 144.5" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <g data-name="title" id="title" transform="translate(0.361 1)">
+                            <text class="cls-t1" transform="translate(0.639 31)"><tspan x="0" y="0">GOLDENEGGS</tspan></text>
+                            <g data-name="title1" id="title1" transform="translate(0 17.5)">
+                                <text class="cls-t2" transform="translate(0 71)"><tspan x="0" y="0">金蛋星球</tspan></text>
+                                <text class="cls-t3" transform="translate(0 118)"><tspan x="0" y="0">GoldenEggs Studio 群组服务器</tspan></text>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="col-md-12 column align-middle">
+                        <br>
+                        <div class="column">
+                            <a aria-pressed="true" class="btn btn-lg disabled" href="#" role="button" style="background-color: #00CBFF; color: #F0F0F0" ><b>敬请期待</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 column align-middle">
+                <div class="row rowq clearfix">
+                    <svg height="100%" viewBox="0 0 542 180" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <a target="_blank" xlink:href="https://wj.qq.com/s2/7705340/7ada/">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" height="180" id="矩形_401" width="542" x="0" y="0">
+                                    <feOffset dy="3" input="SourceAlpha"/>
+                                    <feGaussianBlur result="blur" stdDeviation="3"/>
+                                    <feFlood flood-opacity="0.161"/>
+                                    <feComposite in2="blur" operator="in"/>
+                                    <feComposite in="SourceGraphic"/>
+                                </filter>
+                            </defs>
+                            <g data-name="组件 6 – 1" transform="translate(9 6)">
+                                <g class="cls-5" transform="matrix(1, 0, 0, 1, -9, -6)">
+                                    <rect class="cls-1" data-name="矩形 401" height="162" rx="8" transform="translate(9 6)" width="524"/>
+                                </g>
+                                <path class="cls-2" d="M175.838,26.7H144.271a8.043,8.043,0,0,0-8.116,8.035V87.856a8.043,8.043,0,0,0,8.116,8.035h39.234q7.439,0,8.116-8.035V43.219L175.838,26.7Zm1.5,30.127-15.3,16.18a.6.6,0,0,1-.613.6q-2.751,2.7-5.5,0a.6.6,0,0,0-.613-.6l-7.341-7.79c-1.837-1.8-1.837-4.195,0-5.4,1.224-1.2,3.671-1.8,4.894-.6l.61.6,4.9,5.4,13.462-13.785c1.224-1.2,3.671-1.8,4.894-.6,2.447,2.4,2.447,4.8.61,6Z" data-name="问卷 (1)" transform="translate(277.845 23.093)"/>
+                                <text class="cls-3" transform="translate(24 60)"><tspan x="0" y="0">PROSPECT</tspan></text>
+                                <text class="cls-4" transform="translate(24 76)"><tspan x="0" y="0">服务器已开启抢先测试</tspan><tspan x="0" y="40">填写问卷获取测试资格</tspan></text>
+                            </g>
+                        </a>
+                    </svg>
+                </div>
+                <div class="row rowk clearfix">
+                    <svg height="100%" viewBox="0 0 542 180" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <a target="_blank" xlink:href="http://skin.miyanei.cn:2333/skinlib">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" height="180" id="矩形_skin" width="542" x="0" y="0">
+                                    <feOffset dy="3" input="SourceAlpha"/>
+                                    <feGaussianBlur result="blur" stdDeviation="3"/>
+                                    <feFlood flood-opacity="0.161"/>
+                                    <feComposite in2="blur" operator="in"/>
+                                    <feComposite in="SourceGraphic"/>
+                                </filter>
+                            </defs>
+                            <g data-name="组件 9 – 1" id="组件_9_1" transform="translate(9 6)">
+                                <g class="cls-k6" transform="matrix(1, 0, 0, 1, -9, -6)">
+                                    <rect class="cls-k1" data-name="矩形 401" height="162" id="矩形_401-2" rx="8" transform="translate(9 6)" width="524"/>
+                                </g>
+                                <text class="cls-k2" transform="translate(24 60)"><tspan x="0" y="0">SKIN</tspan></text>
+                                <text class="cls-k3" transform="translate(24 76)"><tspan class="cls-k4"><tspan x="0" y="0">皮肤站已上线！</tspan></tspan><tspan class="cls-k4" x="0" y="40">快定制独家</tspan><tspan class="cls-k5" y="40">专属皮肤</tspan></text>
+                                <path class="cls-k5" d="M20.84.051h6.593a17.24,17.24,0,0,1,1.622.705,7.9,7.9,0,0,1,1.516,1.551,7.9,7.9,0,0,0,2.82,1.869,20.1,20.1,0,0,0,3.878.987h1.375a7.051,7.051,0,0,0,1.974,0,12.586,12.586,0,0,0,5.888-2.292c.705-.529,1.058-1.41,1.8-1.9L49.539.333A1.136,1.136,0,0,0,50.42.086h1.939a18.157,18.157,0,0,1,5.888.388A10.577,10.577,0,0,1,60.433,2.2l2.856,2.609,9.131,8.356c.952.952,2.08,1.8,3.032,2.75a7.051,7.051,0,0,1,2.045,2.5v.529A3.526,3.526,0,0,1,76.51,21.8l-7.686,7.051A7.051,7.051,0,0,1,65.087,31.5a5.147,5.147,0,0,1-4.548-1.869,5.394,5.394,0,0,0-1.058-.952V60.656a3.526,3.526,0,0,1-1.375,2.08,13.327,13.327,0,0,1-7.051.846H25.071a11.494,11.494,0,0,1-5.042-.529,4.337,4.337,0,0,1-1.622-1.763,8.99,8.99,0,0,1-.247-3V28.573a12.128,12.128,0,0,1-3.526,2.679,4.407,4.407,0,0,1-3.526-.529,13.045,13.045,0,0,1-1.446-1.3l-3.526-3.1L4.376,24.73C3.706,24.2,3.107,23.567,2.507,23A7.051,7.051,0,0,1,.462,20.852,3.279,3.279,0,0,1,0,19.019a5.817,5.817,0,0,1,2.5-3.526c.67-.529,1.234-1.163,1.869-1.728l10.894-9.8,1.939-1.8A5.218,5.218,0,0,1,20.735.192Z" transform="translate(401.482 49.268)"/>
+                            </g>
+                        </a>
+                    </svg>
+                </div>
+                <div class="row rown clearfix">
+                    <svg height="100%" viewBox="0 0 542 472" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <filter filterUnits="userSpaceOnUse" height="472" id="矩形_403" width="542" x="0" y="0">
+                                <feOffset dy="3" input="SourceAlpha"/>
+                                <feGaussianBlur result="blur" stdDeviation="3"/>
+                                <feFlood flood-opacity="0.161"/>
+                                <feComposite in2="blur" operator="in"/>
+                                <feComposite in="SourceGraphic"/>
+                            </filter>
+                            <clipPath id="clip-path">
+                                <rect class="cls-n1" height="301" width="311.5"/>
+                            </clipPath>
+                            <clipPath id="clip-path-2">
+                                <rect class="cls-n2" data-name="矩形 404" height="16" id="矩形_404" transform="translate(1447 466)" width="16"/>
+                            </clipPath>
+                        </defs>
+                        <g data-name="组件 10 – 1" id="组件_10_1" transform="translate(9 6)">
+                            <g class="cls-n12" transform="matrix(1, 0, 0, 1, -9, -6)">
+                                <rect class="cls-n3" data-name="矩形 403" height="454" id="矩形_403-2" rx="8" transform="translate(9 6)" width="524"/>
+                            </g>
+                            <text class="cls-n4" id="NOTICE" transform="translate(24 43)"><tspan x="0" y="0">NOTICE</tspan></text>
+                            <text class="cls-n5" id="游戏公告" transform="translate(35 63)"><tspan x="0" y="0">游戏公告</tspan></text>
+                            <g class="cls-n6" data-name="重复网格 1" id="重复网格_1" transform="translate(28 117.946)">
+                                <g data-name="组 20" id="组_20" transform="translate(-1421 -229)">
+                                    <text class="cls-n7" transform="translate(1439 245)"><tspan x="0" y="0">服务器即将上线</tspan></text>
+                                    <text class="cls-n10" transform="translate(1439 270)"><tspan x="0" y="0">测试服务器将于本年上线</tspan></text>
+                                    <line class="cls-n11" transform="translate(1425.5 285.5)" x2="321"/>
+                                </g>
+                                <g data-name="组 20" id="组_20-2" transform="translate(-1421 -152)">
+                                    <text class="cls-n7" transform="translate(1439 245)"><tspan x="0" y="0">官网上线</tspan></text>
+                                    <text class="cls-n10" transform="translate(1439 270)"><tspan x="0" y="0">支持登录激活、皮肤切换等功能</tspan></text>
+                                    <line class="cls-n11" transform="translate(1425.5 285.5)" x2="321"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="https://miyanei.cn/">主页</a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#"  data-toggle="popover" data-placement="bottom" title="oh!no!" data-content="懒得更新">文章</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"  data-toggle="popover" data-placement="bottom" title="oh!no!" data-content="懒得更新">其他</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        友情链接/我的项目
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="https://wiki.biligame.com/theescapists2">逃脱者2BWIKI</a>
-      </div>
-    </li>
-  </ul>
-</nav>
-          <a-layout id="content-layout">
-            <a-layout-content>
-                <a-card>
-                    <div>
-                        <a-tag color="green">v2rayN（Windows）</a-tag>
-                        <a href="https://github.com/2dust/v2rayN/releases" target="_blank">Github</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">V2rayU（Mac）</a-tag>
-                        <a href="https://github.com/yanue/V2rayU/releases" target="_blank">Github</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">v2rayNG（Android）</a-tag>
-                        <a href="https://github.com/2dust/v2rayNG/releases" target="_blank">Github</a>
-                        <a-divider type="vertical"></a-divider>
-                        <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank">Play Store</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">Kitsunebi（Android）</a-tag>
-                        <a href="https://github.com/eycorsican/kitsunebi-android/releases" target="_blank">Github</a>
-                        <a-divider type="vertical"></a-divider>
-                        <a href="https://play.google.com/store/apps/details?id=fun.kitsunebi.kitsunebi4android" target="_blank">Play Store</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">BifrostV（Android）</a-tag>
-                        <a href="https://play.google.com/store/apps/details?id=com.github.dawndiy.bifrostv" target="_blank">Play Store</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">Kitsunebi（iOS）</a-tag>
-                        <a href="https://itunes.apple.com/us/app/kitsunebi-proxy-utility/id1446584073?mt=8" target="_blank">iTunes</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">i2Ray（iOS）</a-tag>
-                        <a href="https://itunes.apple.com/us/app/i2ray/id1445270056?mt=8" target="_blank">iTunes</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">Shadowrocket（iOS）</a-tag>
-                        <a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8" target="_blank">iTunes</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">Pepi（iOS）</a-tag>
-                        <a href="https://itunes.apple.com/us/app/pepi/id1283082051?mt=8" target="_blank">iTunes</a>
-                    </div>
-                    <a-divider></a-divider>
-                    <div>
-                        <a-tag color="green">Quantumult（iOS）</a-tag>
-                        <a href="https://itunes.apple.com/us/app/quantumult/id1252015438?mt=8" target="_blank">iTunes</a>
-                    </div>
-                </a-card>
-            </a-layout-content>
-        </a-layout>
-    </a-layout>
-  
+<!-- jQuery and fullPage -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
 <script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
-
+		$(function(){
+			$('#pages').fullpage({
+			'navigation': false,
+			});
+		});
+    </script>
+<!-- Bootstarp -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.js"></script>
 </body>
 </html>
